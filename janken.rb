@@ -19,6 +19,7 @@ when [0,0],[1,1],[2,2]
     puts "あいこで..."
 when [3,0],[3,1],[3,2]
     puts "あなたの負けです"
+    break
 when [1,0],[2,1],[0,2]
     case_pattern = "computerwin"
 else
@@ -63,7 +64,7 @@ elsif case_pattern == "computerwin"
         break
     when [0,1],[0,2],[0,3],[1,0],[1,2],[1,3],[2,0],[2,1],[2,3],[3,0],[3,1],[3,2]
     else
-        "0~3の数字を入力してください"
+        puts "0~3の数字を入力してください"
     end
 end
 end
